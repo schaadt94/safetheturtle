@@ -148,7 +148,7 @@
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 4s;
+    animation-duration: 7s;
     background-position: center center;
 }
 
@@ -197,7 +197,7 @@
     z-index: 6;
     position: absolute;
     left: 65vw;
-    top: 47vw;
+    top: 46vw;
     transform: rotate(-50deg);
     animation-name: skrald;
     animation-timing-function: linear;
