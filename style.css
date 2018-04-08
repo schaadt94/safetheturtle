@@ -1,0 +1,210 @@
+.strand {
+    overflow: hidden;
+    width: 80vw;
+    height: 80vw;
+    margin: auto
+}
+
+#baggrund {
+    background-image: url(baggrund3.svg);
+    background-size: cover;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#mellemgrund {
+    background-image: url(mellemgrund.svg);
+    margin: auto;
+    width: 80vw;
+    height: 29.3vw;
+    z-index: 2;
+    position: relative;
+    top: -28.4vw
+}
+
+#Forgrund {
+    background-image: url(forgrund1-01.svg);
+    margin: auto;
+    width: 80vw;
+    height: 70vw;
+    z-index: 4;
+    position: relative;
+    top: -75vw;
+    background-repeat: no-repeat;
+}
+
+#mandsurferogersej {
+    background-image: url(Mandsurferogersej.svg);
+    background-size: 100%;
+    height: 4vw;
+    width: 5vw;
+    z-index: 5;
+    position: absolute;
+    top: 20vw;
+    left: 40vw;
+    transform: scale(6);
+    animation-name: mandsej;
+    animation-timing-function: ease;
+    animation-duration: 8s;
+}
+
+@keyframes mandsej {
+    from {
+        left: -5vw
+    }
+    to {
+        left: 40vw
+    }
+}
+
+#kedafdetskildpadde {
+    background-image: url(Skildpaddein%C3%B8d.svg);
+    background-size: 15%;
+    height: 84vw;
+    width: 70vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 5;
+    left: 58vw;
+    top: 33.2vw;
+    animation-name: skildpadde;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+
+@keyframes skildpadde {
+    from {
+        left: 80vw
+    }
+    to {
+        left: 58vw
+    }
+}
+
+#skrald_1 {
+    background-image: url(skrald_papirkule.svg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 19vw;
+    z-index: 6;
+    position: absolute;
+    left: 25vw;
+    top: 55vw;
+    animation-name: skrald;
+
+}
+
+@keyframes skrald {
+    from {
+        left: 80vw
+    }
+    to {
+        left: 58vw
+    }
+}
+
+#skrald_2 {
+    background-image: url(skrald_aludose.svg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 19vw;
+    z-index: 6;
+    position: absolute;
+    left: 16vw;
+    top: 47.2vw;
+    animation-name: skrald;
+
+}
+
+#skrald_3 {
+    background-image: url(skrald_dose.svg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 19vw;
+    z-index: 6;
+    position: absolute;
+    left: 46vw;
+    top: 55vw;
+    animation-name: skrald;
+}
+
+#skrald_4 {
+    background-image: url(skrald_gronflaske.svg);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 19vw;
+    z-index: 6;
+    position: absolute;
+    left: 57vw;
+    top: 54vw;
+    transform: rotate(10deg);
+    animation-name: skrald;
+}
+
+#skrald_5 {
+    background-image: url(skrald_lilleflaske.svg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 19vw;
+    z-index: 7;
+    position: absolute;
+    left: 72vw;
+    top: 18vw;
+    transform: rotate(-90deg);
+    animation-name: skrald;
+}
+
+#skrald_6 {
+    background-image: url(skrald_pose.svg);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 19vw;
+    z-index: 6;
+    position: absolute;
+    left: 82vw;
+    top: 43.4vw;
+    transform: rotate(-50deg);
+    animation-name: skrald;
+}
+
+#skrald_7 {
+    background-image: url(skrald_storflaske.svg);
+    background-size: 43%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 19vw;
+    z-index: 6;
+    position: absolute;
+    left: 37vw;
+    top: 40vw;
+    animation-name: skrald;
+}
+
+#lilleboble {
+    background-image: url(lil.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 10;
+    z-index: 8;
+    position: absolute;
+    left: ;
+    top: ;
+}
+
+#storbobler {
+    background-image: url(stor.svg);
+}
+
+#boblemedflaske {
+    background-image: url(flask.svg);
+}
