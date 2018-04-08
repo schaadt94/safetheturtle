@@ -3,6 +3,7 @@
     width: 80vw;
     height: 80vw;
     margin: auto;
+    position: relative;
 }
 
 .baggrund {
@@ -45,7 +46,7 @@
     z-index: 5;
     position: absolute;
     top: 20vw;
-    left: 40vw;
+    left: 30vw;
     transform: scale(6);
     animation-name: mandsej;
     animation-timing-function: ease;
@@ -57,7 +58,7 @@
         left: -5vw
     }
     to {
-        left: 40vw
+        left: 30vw
     }
 }
 
@@ -69,7 +70,7 @@
     background-repeat: no-repeat;
     position: absolute;
     z-index: 5;
-    left: 58vw;
+    left: 48vw;
     top: 33.2vw;
     animation-name: skildpadde;
     animation-timing-function: linear;
@@ -82,7 +83,7 @@
         top: 50vw
     }
     to {
-        left: 58vw;
+        left: 48vw;
         top: 33.2;
     }
 }
@@ -96,13 +97,13 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 25vw;
-    top: 55vw;
-    /*animation-name: skrald;
+    left: 15vw;
+    top: 47vw;
+    animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
-    background-position: center center;*/
+    animation-duration: 5s;
+    background-position: center center;
 }
 
 @keyframes skrald {
@@ -110,10 +111,10 @@
         transform: scale(0.5);
     }
     50% {
-        transform: scale(1);
+        transform: scale(0.7);
     }
     100% {
-        transform: scale(.5);
+        transform: scale(0.4);
     }
 }
 
@@ -125,13 +126,13 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 16vw;
-    top: 47.2vw;
-    /*animation-name: skrald;
+    left: 0.1vw;
+    top: 40vw;
+    animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 6s;
-    background-position: center center;*/
+    background-position: center center;
 }
 
 .skrald_3 {
@@ -142,13 +143,13 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 46vw;
-    top: 55vw;
-    /* animation-name: skrald;
+    left: 30vw;
+    top: 41vw;
+    animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 4s;
-    background-position: center center;*/
+    background-position: center center;
 }
 
 .skrald_4 {
@@ -159,15 +160,15 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 57vw;
-    top: 54vw;
+    left: 45vw;
+    top: 47vw;
     transform: rotate(10deg);
-    /* animation-name: skrald;
+    animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 2s;
     background-position: center center;
-*/
+
 }
 
 .skrald_5 {
@@ -178,14 +179,13 @@
     height: 19vw;
     z-index: 7;
     position: absolute;
-    left: 72vw;
-    top: 18vw;
-    transform: rotate(-90deg);
-    /*animation-name: skrald;
+    left: 56vw;
+    top: 26vw;
+    animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 6s;
-    background-position: center center;*/
+    background-position: center center;
 }
 
 .skrald_6 {
@@ -196,14 +196,14 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 82vw;
-    top: 43.4vw;
+    left: 65vw;
+    top: 47vw;
     transform: rotate(-50deg);
-    /*animation-name: skrald;
+    animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
-    background-position: center center;*/
+    animation-duration: 4s;
+    background-position: center center;
 }
 
 .skrald_7 {
@@ -214,13 +214,13 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 37vw;
-    top: 40vw;
-    /*animation-name: skrald;
+    left: 20vw;
+    top: 32vw;
+    animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 4s;
-    background-position: center center;*/
+    background-position: center center;
 }
 
 .lilleboble {
