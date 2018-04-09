@@ -1,40 +1,43 @@
 .strand {
     overflow: hidden;
-    width: 80vw;
-    height: 80vw;
+    width: 100vw;
+    height: 56vw;
     margin: auto;
     position: relative;
 }
 
 .baggrund {
-    background-image: url(baggrund3.svg);
-    background-size: cover;
-    width: 80vw;
-    height: 45vw;
-    margin: auto;
+    background-image: url(baggrund_str.svg);
+    background-size: 79%;
+    width: 100vw;
+    height: 56vw;
     position: relative;
     z-index: 1;
+    background-repeat: no-repeat;
 }
 
 .mellemgrund {
-    background-image: url(mellemgrund.svg);
+    background-image: url(mellemgrund_str.svg);
+    background-size: 79%;
     margin: auto;
-    width: 80vw;
-    height: 29.3vw;
+    width: 100vw;
+    height: 56vw;
     z-index: 2;
     position: relative;
-    top: -28.4vw
+    top: -56vw;
+    background-repeat: no-repeat;
+
 }
 
 .Forgrund {
-    background-image: url(forgrund1-01.svg);
-    background-size: contain;
+    background-image: url(forgrund_str.svg);
+    background-size: 79%;
     margin: auto;
-    width: 80vw;
-    height: 102vw;
+    width: 100vw;
+    height: 56vw;
     z-index: 4;
     position: relative;
-    top: -75vw;
+    top: -112vw;
     background-repeat: no-repeat;
 }
 
@@ -45,9 +48,9 @@
     width: 5vw;
     z-index: 5;
     position: absolute;
-    top: 20vw;
-    left: 30vw;
-    transform: scale(6);
+    top: 13.4vw;
+    left: 25vw;
+    transform: scale(4);
     animation-name: mandsej;
     animation-timing-function: ease;
     animation-duration: 8s;
@@ -58,7 +61,7 @@
         left: -5vw
     }
     to {
-        left: 30vw
+        left: 25vw
     }
 }
 
@@ -71,10 +74,11 @@
     position: absolute;
     z-index: 5;
     left: 48vw;
-    top: 33.2vw;
-    animation-name: skildpadde;
+    top: 23.2vw;
+    /*animation-name: skildpadde;
     animation-timing-function: linear;
-    animation-duration: 5s;
+    animation-duration: 5s;*/
+    transform: scale(3);
 }
 
 @keyframes skildpadde {
@@ -84,7 +88,7 @@
     }
     to {
         left: 48vw;
-        top: 33.2;
+        top: 23.2;
     }
 }
 
@@ -241,18 +245,4 @@
 
 .boblemedflaske {
     background-image: url(flask.svg);
-}
-
-.skraldeborge {
-    float: left;
-}
-
-.oh {
-    overflow: hidden;
-}
-
-.super {
-    width: 80%;
-    height: 80%;
-    display: block;
 }
