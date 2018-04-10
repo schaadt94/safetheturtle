@@ -1,0 +1,129 @@
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #115169;
+    position:relative;
+    top: 0;
+    width: 100%;
+    padding-left: 100px;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: #d8fafa;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px
+}
+
+li a:hover {
+    background-color: #2b7f9f;
+}
+#surfer_container {
+    position: absolute;
+    left: 50vw;
+    top:60vw:
+}
+
+/*.surfer_move_down {
+    animation-name: surfer_move_down_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes surfer_move_down_kf {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50vw;
+    }
+}*/
+
+#surfer {
+    outline: 1px dashed black;
+    width: 45vw;
+    height: 50vw;
+    background-image: url(SVG/new_surf.svg);
+    background-size: 500% 500%;
+
+
+
+}
+
+.surf {
+    animation-name: surf_kf;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes surf_kf {
+    0% {
+        background-position: 0% -300%;
+    }
+
+    100% {
+        background-position: -500% -300%;
+    }
+}
+
+}
+
+#skildpadde_container {
+    position: absolute;
+    left: 50vw;
+    top:60vw:
+}
+
+/*.swiming {
+    animation-name: skildpadde_swim_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes skildpadde_swim_kf {
+    from {
+        right: 0;
+    }
+    to {
+        right: 50vw;
+    }
+    */
+#skildpadde_swim {
+    outline: 1px dashed black;
+    width: 30vw;
+    height: 30vw;
+    background-image: url(SVG/Artboard5.svg);
+    background-size: 300% 200%
+}
+
+.swim {
+    animation-name: swim_kf;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(3);
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    }
+
+@keyframes swim_kf {
+    0% {
+        background-position: 0% -100%;
+        /*background-position: 0 0;*/
+    }
+    100% {
+        background-position: -300% -100%;
+        /*background-position: -300% 0;*/
+    }
+}

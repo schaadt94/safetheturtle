@@ -1,9 +1,39 @@
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #115169;
+    position:relative;
+    top: 0;
+    width: 100%;
+    padding-left: 100px;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: #d8fafa;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px
+}
+
+li a:hover {
+    background-color: #2b7f9f;
+}
+
 .strand {
     overflow: hidden;
     width: 100vw;
     height: 56vw;
     margin: auto;
     position: relative;
+    padding: 60px
 }
 
 .baggrund {
@@ -14,6 +44,7 @@
     position: relative;
     z-index: 1;
     background-repeat: no-repeat;
+
 }
 
 .mellemgrund {
@@ -48,8 +79,8 @@
     width: 5vw;
     z-index: 5;
     position: absolute;
-    top: 13.4vw;
-    left: 25vw;
+    top: 17.4vw;
+    left: 30vw;
     transform: scale(4);
     animation-name: mandsej;
     animation-timing-function: ease;
@@ -61,34 +92,34 @@
         left: -5vw
     }
     to {
-        left: 25vw
+        left: 30vw
     }
 }
 
 .kedafdetskildpadde {
     background-image: url(Skildpaddein%C3%B8d.svg);
-    background-size: 15%;
+    background-size: 10%;
     height: 84vw;
     width: 70vw;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 5;
     left: 48vw;
-    top: 23.2vw;
-    /*animation-name: skildpadde;
+    top: 27.5vw;
+    animation-name: skildpadde;
     animation-timing-function: linear;
-    animation-duration: 5s;*/
-    transform: scale(3);
+    animation-duration: 4s;
+
 }
 
 @keyframes skildpadde {
     from {
-        left: 100vw;
-        top: 50vw
+        left: 90vw;
+        top: 40vw
     }
     to {
         left: 48vw;
-        top: 23.2;
+        top: 27.5vw;
     }
 }
 
@@ -102,7 +133,7 @@
     z-index: 6;
     position: absolute;
     left: 15vw;
-    top: 47vw;
+    top: 20vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -112,10 +143,10 @@
 
 @keyframes skrald {
     0% {
-        transform: scale(0.5);
+        transform: scale(0.4);
     }
     50% {
-        transform: scale(0.7);
+        transform: scale(0.6);
     }
     100% {
         transform: scale(0.4);
@@ -130,8 +161,8 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 0.1vw;
-    top: 40vw;
+    left: 6vw;
+    top: 36vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -147,8 +178,8 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 30vw;
-    top: 41vw;
+    left: 29vw;
+    top: 23vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -165,12 +196,12 @@
     z-index: 6;
     position: absolute;
     left: 45vw;
-    top: 47vw;
+    top: 35vw;
     transform: rotate(10deg);
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 5.3s;
     background-position: center center;
 
 }
@@ -184,7 +215,7 @@
     z-index: 7;
     position: absolute;
     left: 56vw;
-    top: 26vw;
+    top: 20vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -200,8 +231,8 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 65vw;
-    top: 46vw;
+    left: 26vw;
+    top: 35.4vw;
     transform: rotate(-50deg);
     animation-name: skrald;
     animation-timing-function: linear;
@@ -218,8 +249,8 @@
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 20vw;
-    top: 32vw;
+    left: 14vw;
+    top: 29vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -245,4 +276,18 @@
 
 .boblemedflaske {
     background-image: url(flask.svg);
+}
+
+.oh {
+
+    overflow: hidden;
+
+}
+
+.super {
+
+    width: 100vw;
+    height: 56vw;
+    display: block;
+
 }
