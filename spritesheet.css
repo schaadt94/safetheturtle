@@ -49,14 +49,11 @@ li a:hover {
 }*/
 
 #surfer {
-    outline: 1px dashed black;
+
     width: 45vw;
     height: 50vw;
-    background-image: url(SVG/new_surf.svg);
+    background-image: url(SVG/surf.svg);
     background-size: 500% 500%;
-
-
-
 }
 
 .surf {

@@ -1,3 +1,13 @@
+/*
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Rokkitt', serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Carter One', cursive;
+font-family: 'Finger Paint', cursive;
+*/
+
+
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -25,4 +35,36 @@ li a {
 
 li a:hover {
     background-color: #2b7f9f;
+
 }
+
+img{
+    width: 100%
+}
+
+body {
+    background-color: azure;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+}
+
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5em;
+}
+
+

@@ -27,7 +27,20 @@ li a:hover {
     background-color: #2b7f9f;
 }
 
-.strand {
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    color: white;
+}
+
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    color: #9d8b77
+}
+
+#strand {
     overflow: hidden;
     width: 100vw;
     height: 56vw;
@@ -36,8 +49,9 @@ li a:hover {
     padding: 60px
 }
 
-.baggrund {
-    background-image: url(baggrund_str.svg);
+#baggrund {
+    overflow: hidden;
+    background-image: url(titlebaggrund.svg);
     background-size: 79%;
     width: 100vw;
     height: 56vw;
@@ -47,73 +61,48 @@ li a:hover {
 
 }
 
-.mellemgrund {
-    background-image: url(mellemgrund_str.svg);
-    background-size: 79%;
-    margin: auto;
-    width: 100vw;
-    height: 56vw;
+#titlelogo {
+
+    position: absolute;
     z-index: 2;
-    position: relative;
-    top: -56vw;
-    background-repeat: no-repeat;
+    top: 20vw;
+    left: 18vw;
+    transform: scale(4);
+    line-height: 1;
+    text-align: center;
+    text-shadow: 1px 1px 70px black;
 
 }
 
-.Forgrund {
-    background-image: url(forgrund_str.svg);
-    background-size: 79%;
-    margin: auto;
-    width: 100vw;
-    height: 56vw;
-    z-index: 4;
-    position: relative;
-    top: -112vw;
-    background-repeat: no-repeat;
-}
-
-#surfer_container {
+#start {
     position: absolute;
-    left: 50vw;
-    top: 60vw;
-    z-index: 8;
-}
-
-.surf {
-    animation-name: surf_kf;
-    animation-duration: 1.5s;
-    animation-timing-function: steps(5);
-    animation-fill-mode: forwards;
+    z-index: 2;
+    top: 24vw;
+    left: 60vw;
+    transform: scale(4);
+    line-height: 1;
+    text-align: center;
+    text-shadow: 1px 1px 40px black;
+    animation-name: start;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
-
+    animation-duration: 3s;
+    background-position: center center;
 }
 
-#surfer {
-    position: absolute;
-    background-image: url(SVG/surf.svg);
-    background-size: 500% 500%;
-    height: 45vw;
-    width: 50vw;
-    z-index: 8;
-    position: absolute;
-    top: 16.3vw;
-    left: 10vw;
-    transform: scale(1);
-}
-
-@keyframes surf_kf {
+@keyframes start {
     0% {
-        background-position: 0% -300%;
+        transform: scale(3.5);
     }
-
+    50% {
+        transform: scale(4);
+    }
     100% {
-        background-position: -500% -300%;
+        transform: scale(3.5);
     }
 }
 
-
-
-.skildpadde {
+#skildpadde {
     background-image: url(SVG/6step_skildpadde_uden.svg);
     width: 10vw;
     height: 10vw;
@@ -121,11 +110,11 @@ li a:hover {
     position: absolute;
     left: 40vw;
     top: 28vw;
-    z-index: 10;
+    z-index: 3;
 }
 
 
-#swim {
+.swim {
     animation-name: swim_kf;
     animation-duration: 2s;
     animation-timing-function: steps(6);
@@ -135,20 +124,20 @@ li a:hover {
 
 @keyframes swim_kf {
     0% {
-        /*background-position:  -100%;*/
+        /*background-position: 0% -100%;*/
         background-position: 0 0;
         left: 85vw;
         top: 40vw;
     }
     100% {
-        /*background-position: -600% -100%;*/
+        /* background-position: -600% -100%;*/
         background-position: -600% 0;
         left: 40vw;
         top: 28vw;
     }
 }
 
-.skrald_1 {
+#skrald1 {
     background-image: url(skrald_papirkule.svg);
     background-size: 20%;
     background-repeat: no-repeat;
@@ -156,8 +145,8 @@ li a:hover {
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 15vw;
-    top: 20vw;
+    left: 8vw;
+    top: 29vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -177,7 +166,7 @@ li a:hover {
     }
 }
 
-.skrald_2 {
+#skrald2 {
     background-image: url(skrald_aludose.svg);
     background-size: 20%;
     background-repeat: no-repeat;
@@ -185,7 +174,7 @@ li a:hover {
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 6vw;
+    left: 1vw;
     top: 36vw;
     animation-name: skrald;
     animation-timing-function: linear;
@@ -194,7 +183,7 @@ li a:hover {
     background-position: center center;
 }
 
-.skrald_3 {
+#skrald3 {
     background-image: url(skrald_dose.svg);
     background-size: 20%;
     background-repeat: no-repeat;
@@ -211,7 +200,7 @@ li a:hover {
     background-position: center center;
 }
 
-.skrald_4 {
+#skrald4 {
     background-image: url(skrald_gronflaske.svg);
     background-size: 35%;
     background-repeat: no-repeat;
@@ -230,7 +219,7 @@ li a:hover {
 
 }
 
-.skrald_5 {
+#skrald5 {
     background-image: url(skrald_lilleflaske.svg);
     background-size: 20%;
     background-repeat: no-repeat;
@@ -239,7 +228,7 @@ li a:hover {
     z-index: 7;
     position: absolute;
     left: 56vw;
-    top: 20vw;
+    top: 22vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -247,7 +236,7 @@ li a:hover {
     background-position: center center;
 }
 
-.skrald_6 {
+#skrald6 {
     background-image: url(skrald_pose.svg);
     background-size: 35%;
     background-repeat: no-repeat;
@@ -255,7 +244,7 @@ li a:hover {
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 26vw;
+    left: 29vw;
     top: 35.4vw;
     transform: rotate(-50deg);
     animation-name: skrald;
@@ -265,7 +254,7 @@ li a:hover {
     background-position: center center;
 }
 
-.skrald_7 {
+#skrald7 {
     background-image: url(skrald_storflaske.svg);
     background-size: 43%;
     background-repeat: no-repeat;
@@ -274,7 +263,7 @@ li a:hover {
     z-index: 6;
     position: absolute;
     left: 14vw;
-    top: 29vw;
+    top: 34vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -282,22 +271,8 @@ li a:hover {
     background-position: center center;
 }
 
-.lilleboble {
-    background-image: url(lil.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 20vw;
-    height: 10;
-    z-index: 8;
-    position: absolute;
-    left: ;
-    top: ;
-}
+#lilleboble {}
 
-.storbobler {
-    background-image: url(stor.svg);
-}
+#storboble {}
 
-.boblemedflaske {
-    background-image: url(flask.svg);
-}
+#flaskogbobler {}
