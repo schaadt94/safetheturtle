@@ -5,7 +5,7 @@ ul {
     position: relative;
     top: 0;
     width: 100%;
-    padding-left: 100px;
+
 
 }
 
@@ -27,107 +27,228 @@ li a:hover {
     background-color: #2b7f9f;
 }
 
-.strand {
+
+#strand {
     overflow: hidden;
-    width: 100vw;
-    height: 56vw;
+    width: 90vw;
+    height: 50vw;
     margin: auto;
     position: relative;
-    padding: 60px
+
 }
 
-.baggrund {
-    background-image: url(baggrund_str.svg);
-    background-size: 79%;
-    width: 100vw;
-    height: 56vw;
-    position: relative;
+#baggrund {
+    background-image: url(baggrund_done.svg);
+    background-size: 100%;
+    width: 90vw;
+    height: 50vw;
+    position: absolute;
     z-index: 1;
     background-repeat: no-repeat;
 
 }
 
-.mellemgrund {
-    background-image: url(mellemgrund_str.svg);
-    background-size: 79%;
-    margin: auto;
-    width: 100vw;
-    height: 56vw;
+#mellemgrund {
+    background-image: url(mellemgrund_done.svg);
+    background-size: 100%;
+    width: 89.1vw;
+    height: 40vw;
+    position: absolute;
     z-index: 2;
-    position: relative;
-    top: -56vw;
-    background-repeat: no-repeat;
-
+    top: 10vw
 }
 
-.Forgrund {
-    background-image: url(forgrund_str.svg);
-    background-size: 79%;
-    margin: auto;
-    width: 100vw;
-    height: 56vw;
-    z-index: 4;
-    position: relative;
-    top: -112vw;
-    background-repeat: no-repeat;
+#Forgrund {
+    background-image: url(tang_done.svg);
+    background-size: 100%;
+    width: 101.2vw;
+    height: 41.85vw;
+    position: absolute;
+    top: 26vw;
+    left: -9vw;
+    z-index: 5;
 }
 
 #surfer_container {
     position: absolute;
-    left: 50vw;
-    top: 60vw;
-    z-index: 8;
-}
-
-.surf {
-    animation-name: surf_kf;
-    animation-duration: 1.5s;
-    animation-timing-function: steps(5);
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-
-}
-
-#surfer {
-    position: absolute;
-    background-image: url(SVG/surf.svg);
-    background-size: 500% 500%;
-    height: 45vw;
+    z-index: 4;
+    height: 55vw;
     width: 50vw;
-    z-index: 8;
-    position: absolute;
-    top: 16.3vw;
-    left: 10vw;
-    transform: scale(1);
+    top: -1.5vw;
+
 }
 
-@keyframes surf_kf {
+.surfer_move_in {
+    animation-name: surfer_move_in_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+}
+
+@keyframes surfer_move_in_kf {
+    from {
+        left: -80vw;
+    }
+
+    to {
+        left: 0vw;
+    }
+}
+
+.position_in_surfer {
+    left: 0vw;
+    top: -1.5vw;
+}
+
+.surfer_move_right {
+    animation-name: surfer_move_right_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes surfer_move_right_kf {
+    from {
+        left: 0vw;
+    }
+
+    to {
+        left: 10vw;
+    }
+}
+
+
+#surfer_sprite {
+    background-image: url(SVG/surf500500.svg);
+    background-size: 500% 500%;
+    height: 55vw;
+    width: 50vw;
+    transform: scale(0.7);
+
+}
+
+.surfer_stand {
+    animation-name: surfer_stand_kf;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes surfer_stand_kf {
     0% {
-        background-position: 0% -300%;
+        background-position: 0 0;
+
     }
 
     100% {
-        background-position: -500% -300%;
+        background-position: 0 0;
     }
 }
 
+.looking {
+    animation-name: surfer_looking_kf;
+    animation-duration: 10s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: 1;
 
+}
 
-.skildpadde {
+@keyframes surfer_looking_kf {
+    0% {
+        background-position: 0 -400%;
+
+    }
+
+    100% {
+        background-position: -300% -400%;
+    }
+
+    /*100% {
+        background-position: -400% -400%;
+    }*/
+}
+
+.falling {
+    animation-name: surfer_falling_kf;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    left: 10vw;
+}
+
+@keyframes surfer_falling_kf {
+    0% {
+        background-position: 0 -200%;
+
+    }
+
+    100% {
+        background-position: -500% -200%;
+    }
+}
+
+.fallen {
+    animation-name: surfer_fallen_kf;
+    animation-duration: 8s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: 1;
+    /*animation tekst*/
+}
+
+@keyframes surfer_fallen_kf {
+    0% {
+        background-position: -400% -200%;
+    }
+    100% {
+        background-position: -400% -200%;
+    }
+}
+
+#skildpadde_container {
+    position: absolute;
+    z-index: 7;
+
+}
+
+.swim_in_skildpadde {
+    animation-name: swim_in_kf;
+    animation-duration: 6s;
+    animation-timing-function: steps(6);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes swim_in_kf {
+    0% {
+        left: 85vw;
+        top: 40vw;
+    }
+    100 {
+        left: 40vw;
+        top: 28vw;
+    }
+
+}
+
+#skildpadde_sprite {
     background-image: url(SVG/6step_skildpadde_uden.svg);
     width: 10vw;
     height: 10vw;
     background-size: 600% 200%;
     position: absolute;
-    left: 40vw;
-    top: 28vw;
-    z-index: 10;
+    left: 47vw;
+    top: 27vw;
+
+
 }
 
-
-#swim {
+.swim {
     animation-name: swim_kf;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-timing-function: steps(6);
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -135,16 +256,12 @@ li a:hover {
 
 @keyframes swim_kf {
     0% {
-        /*background-position:  -100%;*/
+        /*background-position: 0 -100%;*/
         background-position: 0 0;
-        left: 85vw;
-        top: 40vw;
     }
     100% {
         /*background-position: -600% -100%;*/
         background-position: -600% 0;
-        left: 40vw;
-        top: 28vw;
     }
 }
 
@@ -167,15 +284,16 @@ li a:hover {
 
 @keyframes skrald {
     0% {
-        transform: scale(0.4);
+        transform: scale(0.5);
     }
     50% {
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
     100% {
-        transform: scale(0.4);
+        transform: scale(0.5);
     }
 }
+
 
 .skrald_2 {
     background-image: url(skrald_aludose.svg);
@@ -273,8 +391,8 @@ li a:hover {
     height: 19vw;
     z-index: 6;
     position: absolute;
-    left: 14vw;
-    top: 29vw;
+    left: 8vw;
+    top: 25vw;
     animation-name: skrald;
     animation-timing-function: linear;
     animation-iteration-count: infinite;

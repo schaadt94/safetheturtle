@@ -16,21 +16,30 @@
                 <li><a href="Index.html">Animation</a></li>
                 <li><a href="surfer.html">Sprite sheet</a></li>
                 <li><a href="styletile.html">Styletile</a></li>
-                <li><a href="styletile.html">Styletile</a></li>
                 <li><a href="diagram.html">Flowchart og Sekvensdiagram</a></li>
             </ul>
         </nav>
     </header>
+    <button id="sidenVises">Start</button>
+    <button id="stopperOp">Stopper op</button>
+    <button id="surferVidere">Surf videre</button>
+    <button id="falderIVandet">Falder</button>
+    <button id="druknetSurfer">drukner</button>
 
-    <div class="strand">
-        <div class="baggrund"></div>
-        <div class="mellemgrund"></div>
-        <div class="Forgrund"></div>
-        <div id="surfer_container" class="surfer_move_down">
-        <div id="surfer" div class="surf"></div>
+    <div id="strand">
+        <div id="baggrund"></div>
+        <div id="mellemgrund"></div>
+        <div id="Forgrund"></div>
+
+        <div id="surfer_container">
+            <div id="surfer_sprite"></div>
         </div>
 
-        <div class="skildpadde" id="swim"></div>
+        <div id="skildpadde_container">
+            <div id="skildpadde_sprite"></div>
+        </div>
+
+
         <div class="skrald_1"></div>
         <div class="skrald_2"></div>
         <div class="skrald_3"></div>
@@ -43,6 +52,20 @@
         <div class="boblemedflaske"></div>
     </div>
 
+
+    <!-- Audio-->
+
+    <audio id="hav_lyd" src="lyd/WavesSurf01.mp3"></audio>
+    <audio id="surfermusic1_lyd" src="lyd/surfermusic1.mp3"></audio>
+    <audio id="surfermucsic2_lyd" src="lyd/surfermusic2.mp3"></audio>
+    <audio id="skrald_lyd" src="lyd/skrald.mp3"></audio>
+    <audio id="splash_lyd" src="lyd/splashbobles.mp3"></audio>
+    <audio id="ohh_lyd" src="lyd/Apr._16-006.mp3"></audio>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="java.js"></script>
 </body>
 
 </html>
